@@ -66,5 +66,28 @@ public class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    @DisplayName("Testing add method with String values()")
+    void testAdditionWithStrings(){
+        String input = "1,2,3";
+
+        int expected = 6;
+
+        int actual = calculator.add(input);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    @DisplayName("Testing an array of numbers")
+    void testAddistionArray() {
+        int[] input = {1, 2, 3};
+
+        int expected = 6;
+
+        int actual = calculator.add(input);
+
+        assertEquals(expected, actual);
+    }
 
 }
